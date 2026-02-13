@@ -1,0 +1,17 @@
+x=[10,40,50,30,20]
+n=len(x)
+print(n)
+a=x[2]
+print(a)
+b=x[1:3]
+print(b)
+c=x[:3]
+print(c)
+d=x[3:]
+print(d)
+e=x[3:-1] 
+print(e)
+f=x[:-2]
+print(f)
+g=x[1:-3]
+print(g)
