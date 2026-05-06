@@ -18,7 +18,6 @@ class Student:
             return "Pass"
         else:
             return "Fail"
-
 def find_class_average(student_list):
     if not student_list:
         return 0.0
@@ -26,10 +25,8 @@ def find_class_average(student_list):
     total_percentage = sum(student.find_marks_percentage() for student in student_list)
     class_average = total_percentage / len(student_list)
     return round(class_average, 2)
-
 students = []
 n = int(input("Enter the number of students: "))
-
 for i in range(n):
     print(f"\n--- Entering details for Student {i+1} ---")
     name = input("Enter Name: ")
@@ -40,13 +37,11 @@ for i in range(n):
     
     student_obj = Student(name, sap_id, phy, chem, maths)
     students.append(student_obj)
-
 print("\n" + "="*15 + " FINAL REPORT " + "="*15)
 for student in students:
     student.display()
     print(f"Percentage: {student.find_marks_percentage()}%")
     print(f"Result: {student.display_result()}")
     print("-" * 45)
-
 average = find_class_average(students)
 print(f"\n=> Overall Class Average Percentage: {average}%")
