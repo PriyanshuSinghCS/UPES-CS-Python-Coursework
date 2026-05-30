@@ -1,0 +1,14 @@
+tea_varities = ['Black', 'green', 'White']
+
+if "Oolong" in tea_varities:
+    print("I have Oolong tea")
+else:
+    print("No Oolong tea")
+
+tea_varities.append("Oolong") 
+
+if "Oolong" in tea_varities:
+    print("Oolong tea added")
+    print(tea_varities)
+else:
+    print("No Oolong tea")
