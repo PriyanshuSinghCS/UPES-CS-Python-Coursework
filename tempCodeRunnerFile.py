@@ -1,0 +1,3 @@
+
+                    weight REAL,
+                    goal TEXT,
